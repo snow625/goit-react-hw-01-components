@@ -1,0 +1,21 @@
+.transactionHistory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.title {
+  width: 100%;
+  background-color: rgb(177, 177, 226);
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+}
+.th {
+  width: 120px;
+  outline: 1px solid grey;
+  padding: 10px 0;
+}
+.tbody {
+  width: 100%;
+}
