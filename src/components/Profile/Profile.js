@@ -15,7 +15,7 @@ export default function Profile(props) {
       <div className={s.description}>
         <img src={imgUrl} alt={username} className={s.icon} />
         <p className={s.name}>{username}</p>
-        <p className={s.tag}>@{tag}</p>
+        <p className={s.tag}>{`@${tag}`}</p>
         <p className={s.location}>{location}</p>
       </div>
 

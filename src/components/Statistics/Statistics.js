@@ -16,7 +16,7 @@ export default function Statistics(props) {
             style={{ backgroundColor: getRandomHexColor() }}
           >
             <span className={s.label}>{el.label}</span>
-            <span className={s.percentage}>{el.percentage}%</span>
+            <span className={s.percentage}>{`${el.percentage}%`}</span>
           </li>
         ))}
       </ul>
