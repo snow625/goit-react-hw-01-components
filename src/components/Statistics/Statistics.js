@@ -9,14 +9,18 @@ export default function Statistics(props) {
       {title && <h2 className={s.title}>{title}</h2>}
 
       <ul className={s.list}>
-        {stats.map(el => (
+        {stats.map((el) => (
           <li
             key={el.id}
             className={s.item}
-            style={{ backgroundColor: getRandomHexColor() }}
-          >
+            style={{
+              backgroundColor: getRandomHexColor(),
+            }}>
             <span className={s.label}>{el.label}</span>
-            <span className={s.percentage}>{`${el.percentage}%`}</span>
+            <span
+              className={
+                s.percentage
+              }>{`${el.percentage}%`}</span>
           </li>
         ))}
       </ul>
@@ -38,5 +42,7 @@ Statistics.propTypes = {
 // ***********RamdomColor********************
 // __________________________________________
 function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  return `#${Math.floor(Math.random() * 16777215).toString(
+    16
+  )}`;
 }

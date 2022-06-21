@@ -7,9 +7,15 @@ export default function FriendListItem(props) {
     <li className={s.item}>
       <span
         className={s.status}
-        style={{ backgroundColor: isOnline ? '#00FF00' : '#FF0000' }}
-      ></span>
-      <img className={s.avatar} src={userImg} alt={name} width="48" />
+        style={{
+          backgroundColor: isOnline ? '#00FF00' : '#FF0000',
+        }}></span>
+      <img
+        className={s.avatar}
+        src={userImg}
+        alt={name}
+        width='48'
+      />
       <p className={s.name}>{name}</p>
     </li>
   );

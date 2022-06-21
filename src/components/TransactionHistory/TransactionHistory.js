@@ -13,7 +13,7 @@ export default function TransactionHistory({ items }) {
       </thead>
 
       <tbody className={s.tbody}>
-        {items.map(el => (
+        {items.map((el) => (
           <TransactionItem
             key={el.id}
             type={el.type}
